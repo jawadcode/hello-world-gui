@@ -1,0 +1,31 @@
+name:                hello-world-gui
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/jawadcode/hello-world-gui#readme
+license:             BSD3
+author:              Author name here
+maintainer:          jawad.w.ahmed@gmail.com
+copyright:           2021 Jawad Ahmed
+#category:
+extra-source-files:
+- README.md
+
+default-extensions:
+- OverloadedStrings
+
+dependencies:
+  - base >= 4.7 && < 5
+  - data-default
+  - lens
+  - monomer
+  - text
+  - text-show
+
+executables:
+  app:
+    source-dirs:      src
+    main:             Main.hs
+    ghc-options:
+    - -fwarn-incomplete-patterns
+    - -threaded
